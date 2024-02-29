@@ -26,16 +26,16 @@ console.log(myName("islam", "ibrahim"));
 
 
 
-task 2
-making a function to git the max number of array
+// task 2
+// making a function to git the max number of array
 
-input
-let AllNumber = [50, 99, 150, 360, 1169, 5987, 9000];
+// input
 
 // algorithm
 
 // outputs => the max number of array
 
+let AllNumber = [50, 99, 150, 360, 1169, 5987, 9000];
 function maxNumber(arr) {
   let max = arr[0];
   for (let i = 1; i < arr.length; i++) {
@@ -75,4 +75,72 @@ return min
 
 }
 console.log( minName(studentNumbers));
+
+
+
+
+
+// You are given a string. Your task is to count the number of vowels (a, e, i, o, u) in the string.
+
+// Requirements:
+// Implement a JavaScript function called countVowels that takes a string as input.
+// The function should return the count of vowels (case-insensitive) in the string.
+// Example:
+// console.log(countVowels("Hello, World!")); // Output: 3
+// console.log(countVowels("This is a test sentence.")); // Output: 7
+// Your challenge is to implement the countVowels function to count the number of vow
+
+// input ( "string")
+
+// algorithm
+
+// number of vowels
+
+function countVowels(str) {
+  if (str !== "string" ) return "you should enter letters only" ;
+  const vowels = ["a", "e", "i", "o", "u"];
+  let finalString = str.toLowerCase();
+  // console.log(finalString);
+  let vowelsCount = 0;
+  for (let char of finalString) {
+    // console.log(char);
+    if (vowels.includes(char) ){
+      vowelsCount++  
+    }
+  }
+  return vowelsCount
+}
+console.log(countVowels(51507));
+
+
+
+
+
+let numbers =[1,2,3,4,5,6,7,8,9];
+
+function filterOddNumbers(arr) {
+  let oddNumbers = arr.filter(function (value) {
+      return value % 2 !== 0
+  })
+  return oddNumbers
+}
+console.log(filterOddNumbers(numbers));
+
+
+
+
+
+
+
+
+let number =[1,2,3,4,5,6,7,8,9];
+
+function filterevenNumbers(arr) {
+  let evenNumbers = arr.filter(function (value) {
+      return value % 2 == 0
+  })
+  return evenNumbers
+}
+console.log(filterevenNumbers(number));
+
 
