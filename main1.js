@@ -136,11 +136,32 @@ console.log(filterOddNumbers(numbers));
 let number =[1,2,3,4,5,6,7,8,9];
 
 function filterevenNumbers(arr) {
+  if (!Array.isArray(arr)) {
+    throw new Error(" you must put Array" );
+
+  } 
+  if(arr.length === 0 ){
+    throw new Error("you must enter any element in the Array")
+  }
+  if(!arr.every(function(value){
+    typeof(value) === "number"
+
+  } )){
+    throw new Error("you must enter Numbers only")
+
+  }
   let evenNumbers = arr.filter(function (value) {
       return value % 2 == 0
   })
   return evenNumbers
 }
-console.log(filterevenNumbers(number));
+console.log(filterevenNumbers([12,45,12,"ghgh",54]));
+
+
+
+
+
+
+
 
 
