@@ -29,11 +29,6 @@ const students = [
   },
 ];
 
-
-
-
-
-
 // inputs => Array contain 5 objects
 // algorithem => Average = totalScore / Number of students
 // outputs => Aerage of Degree
@@ -80,9 +75,6 @@ const customers = [
     score: 95,
   },
 ];
-
-
-
 
 // inputs => elements of array
 // algorithm =>  Aerage = totalDegree / customerNumber
@@ -149,56 +141,94 @@ const customer = [
 // // let Average = totalDegree / customerNumbers;
 // // console.log(`${Average}%`);
 
+let partner = [
+  {
+    id: 1,
+    name: "Ahmed",
+    score: 40,
+    target: 75,
+  },
+  {
+    id: 2,
+    name: "Mazero",
+    score: 90,
+    target: 80,
+  },
+  {
+    id: 3,
+    name: "Elham",
+    score: 45,
+    target: 90,
+  },
+  {
+    id: 4,
+    name: "Osama",
+    score: 70,
+    target: 60,
+  },
+  {
+    id: 5,
+    name: "Gamal",
+    score: 50,
+    target: 70,
+  },
+  {
+    id: 6,
+    name: "islam",
+    score: 95,
+    target: 80,
+  },
+];
 
+//   let number = partner.length
+// //   console.log(number);
 
+// let totalScore = partner.reduce(function(prev , curr){
+//     let finalTotal = prev + curr.score + curr.target ;
+//     return finalTotal
 
- let partner  = [
-    {
-      id: 1,
-      name: "Ahmed",
-      score: 40,
-      target: 75,
-    },
-    {
-      id: 2,
-      name: "Mazero",
-      score: 90,
-      target: 80,
-    },
-    {
-      id: 3,
-      name: "Elham",
-      score: 45,
-      target: 90,
-    },
-    {
-      id: 4,
-      name: "Osama",
-      score: 70,
-      target: 60,
-    },
-    {
-      id: 5,
-      name: "Gamal",
-      score: 50,
-      target: 70,
-    },
-    {
-      id: 6,
-      name: "islam",
-      score: 95,
-      target: 80,
-    },
-  ];
+// } ,0)
 
-  let number = partner.length
-//   console.log(number);
+// let average = totalScore / number
+// console.log(`${average}%`);
 
-let totalScore = partner.reduce(function(prev , curr){
-    let finalTotal = prev + curr.score + curr.target ;
-    return finalTotal
+const studentss = [
+  {
+    id: 1,
+    name: "Ahmed",
+    score: 80,
+  },
+  {
+    id: 2,
+    name: "Mazero",
+    score: 90,
+  },
+  {
+    id: 3,
+    name: "Elham",
+    score: 100,
+  },
+  {
+    id: 4,
+    name: "Osama",
+    score: 70,
+  },
+  {
+    id: 5,
+    name: "Gamal",
+    score: 85,
+  },
+];
 
-} ,0)
+// average
 
-let average = totalScore / number
+let numbers = studentss.length;
+
+let totalDegree = studentss.reduce(function (prev, current) {
+  let finalScore = prev + current.score;
+  console.log(finalScore);
+  return finalScore;
+}, 0);
+
+let average = totalDegree / numbers;
 console.log(`${average}%`);
