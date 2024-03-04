@@ -222,13 +222,51 @@ const studentss = [
 
 // average
 
-let numbers = studentss.length;
+// let numbers = studentss.length;
 
-let totalDegree = studentss.reduce(function (prev, current) {
+// let totalDegree = studentss.reduce(function (prev, current) {
+//   let finalScore = prev + current.score;
+//   console.log(finalScore);
+//   return finalScore;
+// }, 0);
+
+// let average = totalDegree / numbers;
+// console.log(`${average}%`);
+
+const shuler = [
+  {
+    id: 1,
+    name: "Ahmed",
+    score: 80,
+  },
+  {
+    id: 2,
+    name: "Mazero",
+    score: 90,
+  },
+  {
+    id: 3,
+    name: "Elham",
+    score: 100,
+  },
+  {
+    id: 4,
+    name: "Osama",
+    score: 70,
+  },
+  {
+    id: 5,
+    name: "Gamal",
+    score: 85,
+  },
+];
+
+let n_umbers = shuler.length;
+
+let totalDegree = shuler.reduce(function (prev, current) {
   let finalScore = prev + current.score;
-  console.log(finalScore);
   return finalScore;
 }, 0);
 
-let average = totalDegree / numbers;
-console.log(`${average}%`);
+let Average = totalDegree / n_umbers;
+console.log(`${Average}%`);
