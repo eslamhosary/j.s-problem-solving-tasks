@@ -261,12 +261,14 @@ const shuler = [
   },
 ];
 
-let n_umbers = shuler.length;
+// let n_umbers = shuler.length;
 
-let totalDegree = shuler.reduce(function (prev, current) {
-  let finalScore = prev + current.score;
-  return finalScore;
-}, 0);
+// let totalDegree = shuler.reduce(function (prev, current) {
+//   let finalScore = prev + current.score;
+//   return finalScore;
+// }, 0);
 
-let Average = totalDegree / n_umbers;
-console.log(`${Average}%`);
+// let Average = totalDegree / n_umbers;
+// console.log(`${Average}%`);
+
+

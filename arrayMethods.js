@@ -70,7 +70,9 @@ function filterOddNumbers(arr) {
   })
   return oddNumbers
 }
-console.log(filterOddNumbers([1,6,"5"]));
+// console.log(filterOddNumbers([1,6,"5"]));
+// console.log(filterOddNumbers([1,6,"5"]));
+
 
 
 
